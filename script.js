@@ -737,4 +737,41 @@ function greetings(name = "Guest") {
 greetings(); // Hello, Guest!
 greetings("Anna"); // Hello, Anna!
 
+function greetings(name) {
+  console.log("Hello, " + name + "!");
+}
+
+const greetings = (name) => {
+  console.log("Hello, " + name + "!");
+};
+
+const greetings = name => {
+  console.log("Hello, " + name + "!");
+};
+
+const greetings = () => {
+  console.log("Hello");
+};
+
+const greetings = name => console.log("Hello, " + name + "!");
+
+// This will produce syntax errors 
+function greetings name console.log("Hello, " + name + "!");
+
+const calculateArea = (width, height) => {
+  const area = width * height;
+  return area;
+};
+
+console.log(calculateArea(5, 3)); // 15
+
+const calculateArea = (width, height) => {
+  return width * height;
+}; 
+
+const calculateArea = (width, height) => return width * height;
+
+const calculateArea = (width, height) => width * height;
+
+
 // ---------------------------------------------------
