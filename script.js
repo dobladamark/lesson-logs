@@ -774,4 +774,25 @@ const calculateArea = (width, height) => return width * height;
 const calculateArea = (width, height) => width * height;
 
 
+let globalVar = "I'm a global variable";
+
+function printGlobalVar() {
+    console.log(globalVar);
+}
+
+printGlobalVar(); // Output: "I'm a global variable"
+function greet() {
+    let message = "Hello, local scope!";
+    console.log(message);
+}
+
+greet(); // Output: "Hello, local scope!"
+console.log(message); // This will throw an error
+
+if (true) {
+    let blockVar = "I'm in a block";
+    console.log(blockVar); // Output: "I'm in a block"
+}
+console.log(blockVar); // This will throw an error
+
 // ---------------------------------------------------
