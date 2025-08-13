@@ -796,3 +796,13 @@ if (true) {
 console.log(blockVar); // This will throw an error
 
 // ---------------------------------------------------
+
+
+
+let fruits = ["apple", "banana", "orange"];
+let fruits = ["apple", "banana", "orange"];
+console.log(fruits[0]); // "apple"
+console.log(fruits[2]); // "orange"
+
+let fruits = ["apple", "banana", "orange"];
+console.log(fruits.length); // 3
