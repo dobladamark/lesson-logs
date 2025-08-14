@@ -806,3 +806,18 @@ console.log(fruits[2]); // "orange"
 
 let fruits = ["apple", "banana", "orange"];
 console.log(fruits.length); // 3
+
+const fruits = ["apple", "banana", "cherry"];
+
+console.log(fruits[1]); // "banana"
+
+let fruits = ["apple", "banana", "cherry"];
+console.log(fruits[3]); // undefined
+
+let fruits = ["apple", "banana", "cherry"];
+fruits[1] = "blueberry";
+console.log(fruits); // ["apple", "blueberry", "cherry"]
+
+let fruits = ["apple", "banana", "cherry"];
+fruits[3] = "date";
+console.log(fruits); // Outputs: ["apple", "blueberry", "cherry", "date"]
