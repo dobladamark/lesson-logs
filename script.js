@@ -821,3 +821,30 @@ console.log(fruits); // ["apple", "blueberry", "cherry"]
 let fruits = ["apple", "banana", "cherry"];
 fruits[3] = "date";
 console.log(fruits); // Outputs: ["apple", "blueberry", "cherry", "date"]
+
+const fruits = ["apple", "banana"];
+const newLength = fruits.push("orange");
+console.log(newLength); // 3
+console.log(fruits); // ["apple", "banana", "orange"]
+
+
+
+const fruits = ["apple", "banana"];
+fruits = ["This", "will", "not", "work"];
+console.log(fruits); // Uncaught TypeError: Assignment to constant variable. 
+
+
+let fruits = ["apple", "banana", "orange"];
+let lastFruit = fruits.pop();
+console.log(fruits); // ["apple", "banana"]
+console.log(lastFruit); // "orange"
+
+let numbers = [2, 3];
+let newLength = numbers.unshift(1);
+console.log(numbers); // [1, 2, 3]
+console.log(newLength); // 3
+
+let colors = ["red", "green", "blue"];
+let firstColor = colors.shift();
+console.log(colors); // ["green", "blue"]
+console.log(firstColor); // "red"
