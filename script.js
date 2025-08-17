@@ -848,3 +848,19 @@ let colors = ["red", "green", "blue"];
 let firstColor = colors.shift();
 console.log(colors); // ["green", "blue"]
 console.log(firstColor); // "red"
+
+let fruits = ["apple", "banana", "cherry", "date"];
+console.log(fruits[2]); // Outputs: "cherry"
+
+let chessboard = [
+    ["R", "N", "B", "Q", "K", "B", "N", "R"],
+    ["P", "P", "P", "P", "P", "P", "P", "P"],
+    [" ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " "],
+    [" ", " ", " ", " ", " ", " ", " ", " "],
+    ["p", "p", "p", "p", "p", "p", "p", "p"],
+    ["r", "n", "b", "q", "k", "b", "n", "r"]
+];
+
+console.log(chessboard[0][3]); // Outputs: "Q"
