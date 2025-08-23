@@ -927,3 +927,29 @@ let array = [1, 2, 3, 4, 5];
 array.splice(0);
 
 console.log(array); // []
+
+let originalArray = [1, 2, 3];
+let copyArray = [].concat(originalArray);
+
+console.log(copyArray); // [1, 2, 3]
+console.log(copyArray === originalArray); // false
+
+let originalArray = [1, 2, 3];
+let copyArray = originalArray.slice();
+
+console.log(copyArray); // [1, 2, 3]
+console.log(copyArray === originalArray); // false
+
+
+let originalArray = [1, 2, 3];
+let copyArray = [...originalArray];
+
+console.log(copyArray); // [1, 2, 3]
+console.log(copyArray === originalArray); // false
+
+let originalArray = [1, 2, 3];
+let copyArray = [...originalArray];
+
+copyArray.push(4);
+console.log(originalArray); // [1, 2, 3]
+console.log(copyArray);     // [1, 2, 3, 4]
