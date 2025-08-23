@@ -953,3 +953,49 @@ let copyArray = [...originalArray];
 copyArray.push(4);
 console.log(originalArray); // [1, 2, 3]
 console.log(copyArray);     // [1, 2, 3, 4]
+
+
+const exampleObject = {
+  propertyName: value;
+}
+
+const person = {
+  name: "Alice",
+  age: 30,
+  city: "New York"
+};
+
+const person = {
+  name: "Alice",
+  age: 30,
+  city: "New York"
+};
+
+console.log(person.name);  // Alice
+console.log(person.age);   // 30
+
+const person = {
+  name: "Alice",
+  age: 30,
+  city: "New York"
+};
+
+console.log(person["name"]); // Alice
+console.log(person["age"]); //  30
+
+const oddObject = {
+  "1stProperty": "Hello",
+  "property with spaces": "World"
+};
+
+console.log(oddObject["1stProperty"]);  // Hello
+console.log(oddObject["property with spaces"]);  // World
+
+const person = {
+  name: "Alice",
+  age: 30,
+  city: "Wonderland"
+};
+
+let propertyName = "city";
+console.log(person[propertyName]); // Wonderland
